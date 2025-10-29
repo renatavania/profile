@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins bg-gray-50 text-gray-800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Button & Link Animations */
+button, a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Section Scroll Offset (biar gak ketutup Navbar) */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* 🔹 Optional: Smooth shadow hover effect */
+.card {
+  @apply shadow-md hover:shadow-xl transition-shadow duration-300;
+}
